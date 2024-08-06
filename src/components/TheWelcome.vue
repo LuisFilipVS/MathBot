@@ -25,7 +25,8 @@ export default {
         // .then(response => (response.json()))
         // .then(data => (console.log(data)))
 
-        fetch(`http://localhost:5000/MathBot/response/${this.messageVal}`)
+        //fetch(`http://localhost:5000/MathBot/response/${this.messageVal}`)
+        fetch(`https://mathbotserver.up.railway.app/MathBot/response/${this.messageVal}`) //Usado no deploy
           // .then(function(response) {
           //     if (!response.ok) {
           //     throw new Error(response.statusText);
